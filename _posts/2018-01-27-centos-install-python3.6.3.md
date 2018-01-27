@@ -15,7 +15,7 @@ categories: Python install
 
 解压该文件，并解包，得到`Python-3.6.3`目录：
 
-```bash
+```
 # xz -d Python-3.6.3.tar.xz
 # tar -xvf Python-3.6.3.tar
 ...
@@ -26,7 +26,7 @@ categories: Python install
 
 因为是从源码编译的方式安装，所以我们需要预先安装好环境：
 
-```bash
+```
 # yum install wget gcc make
 ```
 
@@ -39,7 +39,7 @@ categories: Python install
 
 同时，还需要先安装部分模块，如下：
 
-```bash
+```
 # 解决 import bz2 报错
 # yum install bzip2-devel
 
@@ -66,7 +66,7 @@ categories: Python install
 
 我们接上面，解包之后，先配置，再编译：
 
-```bash
+```
 # pwd
 /home/software/Python-3.6.3
 # ./configre --prefix=/usr/local/python3.6 --enable-optimizations
@@ -91,21 +91,21 @@ categories: Python install
 
 安装完成后，我们可以检查：
 
-```bash
+```
 # /usr/local/python3.6/bin/python3 --version
 Python 3.6.3
 ```
 
 即表明安装成功了，但是我们运行`python --version`，仍然显示2.x的版本：
 
-```bash
+```
 # python --version
 Python 2.7.5
 ```
 
 这是因为默认的符号链接`/usr/bin/python`还是指向Python2.7.5的，我们需要将其修改，如下：
 
-```bash
+```
 # ln -s /usr/local/python3.6/bin/python3 /usr/bin/python3
 # rm /usr/bin/python
 # ln -s /usr/bin/python /usr/bin/python3
@@ -117,7 +117,7 @@ Python 2.7.5
 
 我们经过上面安装好Python3.6.3，并配置好后，会发现`yum`命令用不了了，报错如下：
 
-```bash
+```
 #  yum list
   File "/bin/yum", line 30
     except KeyboardInterrupt, e:
@@ -129,8 +129,11 @@ SyntaxError: invalid syntax
 
 解决方法也很简单，因为我们Python2.x的版本还在，并没有删除，所以修改如下两个文件头中的申明，将`#!/usr/bin/python`改为`#!/usr/bin/python2.7`即可：
 
-```bash
+```
 # vi /usr/bin/yum
 
 # vi /usr/libexec/urlgrabber-ext-down
 ```
+
+> 遇到类似的问题报错，可以检查一下对应的文件是否因为这个问题引起的。
+> 当然，更好的解决方法当然是不修改`/usr/bin/python`链接，这纯粹是作si的搞法...
