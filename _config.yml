@@ -16,10 +16,10 @@
 title: 杨小定定
 email: rick.yound@yahoo.com
 description: >- # this means to ignore newlines until "baseurl:"
-  这是一个记录技术大牛成长之路的高精尖博客。
+  这里是杨小定定的技术之路博客，欢迎光临。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: rickyound
+twitter_username: 
 github_username:  rickyound
 
 # Build settings
