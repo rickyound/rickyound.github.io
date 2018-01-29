@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+---
+layout: default
+---
+
 <html lang="{{ site.lang | default: "en-US" }}">
   
   {% include header.html %}
@@ -17,6 +20,8 @@
     </section>
 
     <section class="main-content">
+	  {{ page.title }}
+	
       {{ content }}
 
       {% include footer.html %}
