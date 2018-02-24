@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "CentOS 7 扩展磁盘操作"
 description: "本文记录了在WMWare中将已经安装好的CentOS 7系统扩展磁盘的操作"
 date:   2018-01-27 23:23:01 +0800
