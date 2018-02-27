@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "CentOS 7 安装Python3.6.3"
 description: "本文详细记录了CentOS 7操作系统安装以及配置Python3.6.3的过程，供参考。"
 date:   2018-01-27 21:21:01 +0800
