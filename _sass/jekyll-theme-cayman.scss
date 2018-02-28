@@ -343,3 +343,44 @@ a {
 .site-footer-credits {
   color: $blockquote-text-color;
 }
+
+/* ---------------------- nav ---------------------- */
+.nav-background {
+  background:#CCC;
+}
+.nav {
+  margin:0 auto;
+  width:50%;
+}
+.nav ul {
+  zoom:1;
+  overflow:hidden;
+  list-style:none;
+  margin:0;
+  padding:0;
+}  
+.nav li {
+  float:left;
+  width:100px;
+  height:30px;
+  line-height:30px;
+  text-align:center;
+}  
+.nav a {
+  color:#333;
+}  
+.nav a .en {
+  display:none;
+}  
+.nav a:hover {
+  display:block;
+  background:#333;
+  color:#CCC;
+}  
+.nav a:hover .en {
+  display:inline;
+}  
+.nav a:hover .cn {
+  display:none;
+} 
+/* ---------------------- nav ---------------------- */
