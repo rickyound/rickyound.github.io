@@ -1,5 +1,6 @@
 ---
 layout: post
+author: "杨小定定"
 title:  "AIX 文件及目录对比工具"
 description: "因diff和sdiff均不能直接符合要求，故编写该工具。"
 date:   2018-02-27 14:08:00 +0800
