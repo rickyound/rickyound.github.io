@@ -61,7 +61,7 @@ categories: technology
 | `HOUR(time)` | 返回time的小时值 |
 | `MINUTE(time)` | 返回time的分钟值 |
 | `MONTHNAME(date)` | 返回date的月份名，*英文名* |
-| `DATE_FORMAT(date, fmt)` | 返回按字符串fnt格式化日期date值<br/>fmt详见下附一： |
+| `DATE_FORMAT(date, fmt)` | 返回按字符串fmt格式化日期date值<br/>fmt详见下附一： |
 | `DATE_ADD(date, INTERVAL expr type)` | 返回一个日期或时间值加上一个时间间隔的时间值<br/>其中INTERVAL是关键字，expr是表达式，type是间隔类型<br/>详见下附二： |
 | `DATEDIFF(expr1, expr2)` | 返回起始时间expr1和结束时间expr2之间的天数<br/>即用第一个时间减去第二个时间，的天数差 |
 
