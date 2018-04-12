@@ -3,7 +3,7 @@ layout: post
 author: "杨小定定"
 title:  "MySQL 常用的內建函数"
 description: "记录MySQL常用的一些內建函数，包括字符串的处理、数值的运算、日期的运算等等。"
-date:   2018-04-12 00:00:00 +0800
+date:   2018-04-12
 categories: technology
 ---
 
