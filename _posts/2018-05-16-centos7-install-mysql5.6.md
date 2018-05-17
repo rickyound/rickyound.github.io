@@ -1,18 +1,17 @@
 ---
 layout: post
 author: "杨小定定"
-title:  "CentOS 7下安装MySQL 5.6以及防火墙配置开放3306端口"
+title:  "CentOS安装MySQL以及防火墙配置开放3306端口"
 description: "过程记录。"
 date:   2018-05-16
 categories: technology
 ---
 
-# CentOS 下安装 MySQL 5.6.40
-
 > 环境
 > 1. VMware 14 pro
 > 2. CentOS 7
 > 3. 虚拟机网络选NAT模式
+> 4. MySQL 5.6.40
 
 ## 准备
 
@@ -37,7 +36,7 @@ categories: technology
 
 **3. 复制到安装目录**
 
-```bash
+```
 # cp mysql-5.6.40-linux-glibc2.12-x86_64 /usr/local/mysql
 ```
 
